@@ -53,7 +53,7 @@
             .then(data => {
                 console.log("Datos recibidos:", data); // Mostrar datos recibidos
                 if (data.trim() === "registro_exitoso") {
-                    window.location.href = '../login/iniciar_sesion.html'; // Redirige al login
+                    window.location.href = '../iniciar_sesion.html'; // Redirige al login
                 } else {
                     document.getElementById('resultadoRegistro').textContent = data; // Mostrar el error
                 }
@@ -66,7 +66,7 @@
 
         // Volver al formulario de inicio de sesión
         document.getElementById('btnVolverLogin').addEventListener('click', () => {
-            window.location.href = '../login/iniciar_sesion.html';
+            window.location.href = '../iniciar_sesion.html';
         });
 
         document.getElementById('emailRegistro').addEventListener('blur', function() {
